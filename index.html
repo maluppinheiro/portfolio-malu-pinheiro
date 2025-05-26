@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Malu Pinheiro, desenvolvedora front-end júnior, com projetos web criativos e modernos.">
+    <meta name="keywords" content="portfólio, front-end, desenvolvimento web, Malu Pinheiro">
+    <meta name="author" content="Malu Pinheiro">
+    <meta property="og:title" content="Malu Pinheiro - Portfólio">
+    <meta property="og:description" content="Explore os projetos e habilidades de Malu Pinheiro, desenvolvedora front-end júnior.">
+    <meta property="og:image" content="./images/og-image.jpg">
+    <meta property="og:url" content="https://malupinheiro.netlify.app">
+    <title>Malu Pinheiro - Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav-link" href="#home" onclick="scrollToSection('home')" aria-label="Ir para a seção Home">Home</a>
+            <a class="nav-link" href="#projects" onclick="scrollToSection('projects')" aria-label="Ir para a seção Projetos">Projetos</a>
+            <a class="nav-link" href="#about" onclick="scrollToSection('about')" aria-label="Ir para a seção Sobre">Sobre</a>
+            <a class="nav-link" href="#contact" onclick="scrollToSection('contact')" aria-label="Ir para a seção Contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" role="region" aria-labelledby="home-heading">
+            <h1 id="home-heading">Olá, eu sou <span class="span">Malu Pinheiro</span>.</h1>
+            <p class="intro">Uma desenvolvedora criativa focada em construir experiências digitais excepcionais e interfaces intuitivas, responsivas e modernas.</p>
+            <button class="btn" onclick="scrollToSection('projects')">Ver Projetos</button>
+        </section>
+
+        <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projetos</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/site super mário.PNG" alt="Screenshot do site Super Mário, um projeto de Malu Pinheiro">
+                    <h3>Super Mário</h3>
+                    <p>Uma landing page responsiva inspirada no universo do Super Mário, com um design moderno e interativo com animações 
+                        dinâmicas e um layout amigável, criada para proporcionar uma experiência digital envolvente e nostálgica.</p>
+                    <a href="https://supermariopage.netlify.app/" target="_blank" class="project-link"><strong>Ver Projeto <i class="fas fa-arrow-right"></i></strong></a>
+                </div>
+                <div class="card">
+                    <img src="./assets/site coffee page.PNG" alt="Screenshot do site We Coffee, um projeto de Malu Pinheiro">
+                    <h3>We Coffee</h3>
+                    <p>Um site responsivo para um projeto de cafeteria, apresentando um design moderno e elegante com 
+                        navegação intuitiva e elementos visualmente atraentes, criado para atrair clientes e melhorar sua experiência online.</p>
+                    <a href="https://wecoffe.netlify.app/" target="_blank" class="project-link"><strong>Ver Projeto <i class="fas fa-arrow-right"></i></strong></a>
+                </div>
+                <div class="card">
+                    <img src="./assets/site discord.PNG" alt="Screenshot do site Projeto Discord, um projeto de Malu Pinheiro">
+                    <h3>Projeto Discord</h3>
+                    <p>Uma recriação responsiva da interface do Discord, apresentando um design limpo e moderno
+                         com replicação precisa do layout e animações CSS sutis, criado para demonstrar proficiência em desenvolvimento front-end</p>
+                    <a href="https://discordpage.netlify.app/" target="_blank" class="project-link"><strong>Ver Projeto <i class="fas fa-arrow-right"></i></strong></a>
+                </div>
+                <div class="card">
+                    <img src="./assets/site apimovel.PNG" alt="Screenshot do site APIMÓVEL, um projeto de Malu Pinheiro">
+                    <h3>APIMÓVEL</h3>
+                    <p>Uma plataforma responsiva para um profissional imobiliário, com funcionalidade 
+                        otimizada, navegação intuitiva e um layout refinado, criado para exibir listagens de imóveis e melhorar o envolvimento do 
+                        usuário com uma experiência digital perfeita.</p>
+                    <a href="https://www.apimovel.com.br/" target="_blank" class="project-link"><strong>Ver Projeto <i class="fas fa-arrow-right"></i></strong></a>
+                </div>
+                <div class="card">
+                    <img src="./assets/site rosi gaspar.PNG" alt="Screenshot do site Rosi Gaspar Imóveis, um projeto de Malu Pinheiro">
+                    <h3>Rosi Gaspar Imóveis</h3>
+                    <p>Um site responsivo para uma profissional imobiliária, projetado com uma estética limpa e moderna, navegação intuitiva e layout
+                         centrado no usuário, criado para apresentar efetivamente listagens de imóveis </p>
+                    <a href="https://www.rosigaspar.com.br/" target="_blank" class="project-link"><strong>Ver Projeto <i class="fas fa-arrow-right"></i></strong></a>
+                </div>
+                <div class="card">
+                    <img src="./assets/site djs reformas.PNG" alt="Screenshot do site DJS Reformas, um projeto de Malu Pinheiro">
+                    <h3>DJS Reformas</h3>
+                    <p>Um site responsivo para a DJS Reformas, com navegação intuitiva. Criado para destacar os serviços da empresa, ele impulsiona o 
+                        engajamento e as consultas dos clientes por meio de uma experiência digital fluida e impactante.</p>
+                    <a href="https://www.djsreformas.com.br/" target="_blank" class="project-link"><strong>Ver Projeto <i class="fas fa-arrow-right"></i></strong></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" role="region" aria-labelledby="about-heading">
+            <h2 id="about-heading">Sobre Mim</h2>
+            <hr>
+            <p class="tagline"><strong>Desenvolvedora com paixão por criar soluções digitais e pelo mundo do código</strong></p>
+            <p class="p-section">Sou uma desenvolvedora web especializada em criar experiências digitais excepcionais. Com foco em design centrado no usuário, trabalho para construir aplicações web modernas e intuitivas.</p>
+            <p class="p-section">Minha abordagem combina criatividade com funcionalidade, resultando em produtos digitais que são tanto bonitos, quanto eficientes.</p>
+            <div class="tech-buttons">
+                <button class="tech-btn">HTML</button>
+                <button class="tech-btn">CSS</button>
+                <button class="tech-btn">JavaScript</button>
+            </div>
+        </section>
+
+        <section id="contact" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contato</h2>
+            <div class="contact-buttons">
+                <a href="https://wa.me/5521981156822" target="_blank" class="contact-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:contato.malupinheiro@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> E-mail</a>
+                <a href="https://www.linkedin.com/in/malu-pinheiro-4a5073343/" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/maluppinheiro" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Malu Pinheiro</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
