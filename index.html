@@ -125,6 +125,33 @@
         }, { threshold: 0.2 });
 
         sections.forEach(section => observer.observe(section));
+
+        function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Carrega a seção home imediatamente
+    document.addEventListener('DOMContentLoaded', function() {
+        const homeSection = document.getElementById('home');
+        homeSection.classList.add('visible');
+        
+        // Configura o observer para as outras seções
+        const sections = document.querySelectorAll('section:not(#home)');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { 
+            threshold: 0.1, // Reduzido de 0.2 para 0.1
+            rootMargin: '0px 0px -50px 0px' // Adiciona um pequeno offset negativo
+        });
+
+        sections.forEach(section => observer.observe(section));
+    });
+    
     </script>
 </body>
 </html>

@@ -77,8 +77,8 @@ section {
     flex-direction: column;
     align-items: flex-start;
     opacity: 0;
-    transform: translateY(30px); /* Simplified transform, reduced from 100px */
-    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Faster, smoother transition */
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 section.visible {
@@ -448,8 +448,8 @@ footer {
     section {
         padding: 50px 15px;
         min-height: 60vh;
-        transform: translateY(20px); /* Reduced initial offset for mobile */
-        transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Faster transition */
+        transform: translateY(15px);
+        transition: opacity 0.25s ease-out, transform 0.25s ease-out;
     }
 
     section.visible {
@@ -542,8 +542,8 @@ footer {
 
     section {
         padding: 40px 10px;
-        transform: translateY(15px); /* Further reduced offset */
-        transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Even faster */
+        transform: translateY(10px);
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
     }
 
     section.visible {
